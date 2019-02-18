@@ -276,6 +276,10 @@ class Monster(Entity):
 
   def update(self):
     self.move()
+    if self.tileset == (1,3):
+    	self.tileset = (0,3)
+    elif self.tileset == (0,3):
+    	self.tileset = (1,3) 
 
 class Gold(Entity):
   def __init__(self, x, y, world):
