@@ -290,7 +290,7 @@ class Gold(Entity):
 game = Game(0)
 #clock = pygame.time.Clock()
 clock = pygame.time.Clock()
-clock.tick(120)
+clock.tick(60)
 
 crashed = False
 
