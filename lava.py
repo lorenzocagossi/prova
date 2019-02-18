@@ -301,13 +301,13 @@ while not crashed:
       crashed = True
     elif event.type == pygame.KEYDOWN:  
       if game.is_game_running():
-        if event.key == pygame.K_a:
+        if event.key == pygame.K_LEFT:
           player.move("a")
-        elif event.key == pygame.K_d:
+        elif event.key == pygame.K_RIGHT:
           player.move("d")
-        elif event.key == pygame.K_w:
+        elif event.key == pygame.K_UP:
           player.move("w")
-        elif event.key == pygame.K_s:
+        elif event.key == pygame.K_DOWN:
           player.move("s")
         elif event.key == pygame.K_n:
           game.win()
