@@ -272,7 +272,7 @@ class Single_Wall(Entity):
 class Monster(Entity):
   def __init__(self, x, y, world):
     #Entity.__init__(self, x, y, "M")
-    super().__init__(x, y, world, ">", choice([(0,2),(2,1),(1,3)]))
+    super().__init__(x, y, world, ">", choice([(0,2),(2,1)]))
 
   def update(self):
     self.move()
