@@ -12,7 +12,7 @@ if not pygame.image.get_extended():
 
 
 #game constants
-MAX_SHOTS      = 2    #most player bullets onscreen
+MAX_SHOTS      =3    #most player bullets onscreen
 ALIEN_ODDS     = 22     #chances a new alien appears
 BOMB_ODDS      = 60    #chances a new bomb will drop
 ALIEN_RELOAD   = 12     #frames between new aliens
@@ -90,7 +90,7 @@ class Player(pygame.sprite.Sprite):
 
 
 class Alien(pygame.sprite.Sprite):
-    speed = 20
+    speed = 15
     animcycle = 12
     images = []
     def __init__(self):
@@ -201,7 +201,7 @@ def main(winstyle = 0):
     #decorate the game window
     icon = pygame.transform.scale(Alien.images[0], (32, 32))
     pygame.display.set_icon(icon)
-    pygame.display.set_caption('Elia Merlo sei un gay')
+    pygame.display.set_caption('Space invaders by cagos.exe')
     pygame.mouse.set_visible(0)
 
     #create the background, tile the bgd image
